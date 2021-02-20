@@ -13,7 +13,6 @@ import ChatMessage from "./components/TheMessageComponent.js"
         vm.$refs.music.play();
 
     }
-
     const vm = new Vue({
         data: {
             messages: [],
@@ -27,11 +26,9 @@ import ChatMessage from "./components/TheMessageComponent.js"
         },
 
         methods: {
-
             joinChat() {
                 this.joinchat = true;
             },
-
             dispatchMessage() {
 
                 socket.emit('chatmessage', { content: this.message, name: this.nickname || "Anonymous" })
@@ -42,7 +39,6 @@ import ChatMessage from "./components/TheMessageComponent.js"
         }
 
     }).$mount("#app");
-
     socket.addEventListener("connected", setUserId);
     socket.addEventListener("message", appendMessage);
 
