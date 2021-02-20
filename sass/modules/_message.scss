@@ -1,0 +1,75 @@
+.chatApp{
+    .close {
+        display:flex;
+        flex-direction:row;
+        justify-content:flex-start;
+        padding: .5rem;
+        z-index:2;
+        border-bottom:1px solid rgba(255, 255, 255, 0.4);
+        background-color:rgba(0, 195, 255, 0.3);
+        height:60px;
+        .msg_Logo {
+            height: 58px;
+            padding:1px;
+            transition:.3s;
+            &:hover {
+                height: 60px;
+                padding:0px;
+            }
+        }
+    }
+    .messages{
+        height:85vh;
+        overflow:auto;
+        overflow-x:hidden;
+        width: 90vw;
+        margin:20px auto -5px auto;
+        background:rgba(0, 0, 0, 0.3);
+        box-sizing:border-box;
+        border-radius:10px;
+        .messageReceived{
+            padding:10px;
+            max-width:50%;
+            border-radius:.4rem;
+            margin:20px auto 20px 20px;
+            background:#3592d0;
+            h3{
+                text-align:right;
+            }
+            .onScreenMessage{
+                text-align:left;
+                line-height:25px;
+                overflow-wrap:break-word;
+            }
+        }
+        .messageSent{
+            background:#5b6bcd;
+            margin:20px 20px 20px auto;
+            h3{
+                text-align:right
+            }
+        }
+        &::-webkit-scrollbar-track{
+            background:none;
+        }
+        &::-webkit-scrollbar{
+            width:7px;
+        }
+        &::-webkit-scrollbar-thumb{
+            border-radius:10px;
+            background:rgba(255, 255, 255, 0.5);
+        }
+        &::-webkit-scrollbar-thumb:hover{
+            background:rgba(255, 255, 255, 0.9);
+        }
+        .Sender{
+            font-weight:lighter;
+            font-size:.7em;
+            color:rgba(255, 255, 255, 0.8);
+            span {
+                font-size:1.2em;
+                text-decoration:underline;
+            }
+        }
+    }
+}
