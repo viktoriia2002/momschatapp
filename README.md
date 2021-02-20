@@ -1,9 +1,9 @@
-## Mom's Chat App
+# Mom's Chat App
 
-# Description
+## Description
 This is the chat of First Aid for moms
 
-# Used
+## Used
 socket.io
 node.js
 vue.js
