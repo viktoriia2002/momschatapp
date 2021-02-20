@@ -1,0 +1,21 @@
+{
+  "name": "vktappchat",
+  "version": "1.0.0",
+  "description": "Realtime mom chat app",
+  "main": "app.js",
+  "scripts": {
+    "start-dev": "nodemon app & browser-sync start --proxy 'localhost:5050' --files 'index.html' 'public'",
+    "start-ui": "",
+    "start": "node app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.26.14",
+    "express": "^4.17.1",
+    "socket.io": "^3.1.1",
+    "vue-chat-scroll": "^1.4.0",
+    "vue-moment": "^4.1.0"
+  }
+}

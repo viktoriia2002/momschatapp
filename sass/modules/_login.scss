@@ -1,0 +1,27 @@
+.login-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    .nk{
+        margin-top: 100px;
+        height: 50px;
+        width: 300px;
+        border-radius: 20px;
+        border: 0px;
+        font-size: 22px;
+        font-family:  'Montserrat', sans-serif;
+    }
+    .button{
+        border-radius: 20px;
+        border: 0px;
+        height: 30px;
+        width: 100px;
+        font-family:  'Montserrat', sans-serif;
+        background-color: #89d8d3;
+        background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);;
+    }
+
+
+}

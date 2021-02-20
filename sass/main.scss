@@ -1,0 +1,53 @@
+* {
+	margin: 0; padding: 0; box-sizing: border-box;
+}
+
+html, body { height: 100%; }
+
+
+body { 
+	
+	font-family: 'Montserrat';
+	font-size: 22px;
+	height: 1800px;
+
+}
+
+main { 
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	background-color: #f9ea8f;
+	background-image: linear-gradient(315deg, #f9ea8f 0%, #aff1da 74%);   
+	font-size: 48px;
+	font-family: 'Montserrat', sans-serif;
+	 text-align: center;
+
+	 .text{
+		 margin-top: 100px;
+		 font-weight: 500;
+		 font-size: 66px;
+	 }
+	 
+	 p{
+		 font-size: 18px;
+		 margin-top: 20px;
+		 font-style: italic;
+	 }
+}
+
+.hidden{
+    display: none;
+}
+
+
+
+
+// imports
+
+@import 'modules/_message';
+@import 'modules/_reset';
+@import 'modules/_login';
+
+
+
